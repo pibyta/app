@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cuentos para leer antes de apagar la luz</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script src="jquery-1.12.3.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script src="themes/jquery.mobile.icons.min.js"></script>
+<link rel="stylesheet" href="themes/capricho.css">
+<link rel="stylesheet" href="themes/capricho.min.css">
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+
+<!-- Start of first page inicio-->
+<div data-role="page" id="inicio" data-transition="pop">
+	<div data-role="header" data-theme="c" class="elheader"> <button class="ui-btn ui-shadow 	ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</button><h1>cuentos cortos<h1>
+	</div>
+	<div class="ui-field-contain">
+	<a href="#personajes"><img src="img/portada.jpg"></a>
+	</div>
+	<div data-role="footer" data-theme="c" class="elfooter" ><h2>Capricho Lucero<h2></div>
+	</div>
+
+<!-- Start of personajes -->
+<div data-role="page" id="personajes" data-transition="slide">
+
+	<div data-role="header" data-theme="c" class="elheader"><span data-role="none"><a href="#inicio"><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</button></a></span><h1>cuentos cortos<h1>
+	</div>
+
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#" class="ui-btn-active">personajes</a></li>
+			<li><a href="#lugares" data-transition="slide">lugares</a></li>
+			<li><a href="#finales" data-transition="slide">finales</a></li>
+        </ul>
+	</div>
+
+
+<div role="main" class="ui-content">
+  	<p><span>armá tu cuento</span></p><p>según tu capricho</p> </div>
+
+
+	<div class="ui-grid-a ui-responsive">
+		<div class="ui-block-a"><a href="#popupmimosin" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/mimosin.jpg"></a></div>
+		<div class="ui-block-b"><a href="#popuppichibu" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/pichibu.jpg"></a></div>
+		<div class="ui-block-a"><a href="#popuppintita" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto"  src="img/pintita.jpg"></a></div>
+		<div class="ui-block-b"><a href="#popuptuntun" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto"  src="img/tuntun.jpg"></a></div>
+	</div>
+
+<!-- Start pop up personajes-->
+
+<div data-role="popup" id="popupmimosin" data-corners="false">
+	<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
+	<h3>mimosin</h3><h4>Tranquilo y atento</h4><img src="img/mimosin.jpg">
+	<form>
+		<label>
+		<input type="checkbox" name="checkbox-0">Confirmar personaje
+		</label>
+	</form>
+</div>
+	<div data-role="popup" id="popuppichibu" data-corners="false">
+	<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow 	ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
+	<h3>pichibu</h3><h4>Inquieto y curioso</h4><img src="img/pichibu.jpg">
+	<form>
+		<label>
+		<input type="checkbox" name="checkbox-0">Confirmar personaje
+		</label>
+	</form>
+</div>
+<div data-role="popup" id="popuppintita" data-corners="false">
+<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
+<h3>pintita</h3><h4>Movedizo y saltarín</h4><img src="img/pintita.jpg">
+	<form>
+		<label>
+		<input type="checkbox" name="checkbox-0">Confirmar personaje
+		</label>
+	</form>
+</div>
+
+<div data-role="popup" id="popuptuntun" data-corners="false">
+	<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
+<h3>tun tun</h3><h4>Vergonzoso y dudoso</h4><img src="img/tuntun.jpg">
+	<form>
+		<label>
+		<input type="checkbox" name="checkbox-0">Confirmar personaje
+		</label>
+	</form>
+</div>
+
+<div data-role="footer" class="elfooter"><h2>Elegir personaje</h2>
+</div>
+</div> 
+
+
+<!-- Start of lugares page -->
+
+<div data-role="page" id="lugares" data-transition="slide">
+
+<div data-role="header" data-theme="c" class="elheader"> <span data-role="none"><a href="#personajes"><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</button></a></span><h1>cuentos cortos<h1>
+</div>
+
+<div data-role="navbar">
+	<ul>
+		<li><a href="#personajes" data-transition="slide">personajes</a></li>
+		<li><a href="#" class="ui-btn-active">lugares</a></li>
+		<li><a href="#finales" data-transition="slide">finales</a></li>
+	</ul>
+</div>
+
+<div role="main" class="ui-content"><p><span>armá tu cuento</span></p><p>según tu capricho</p> </div>
+
+
+<div class="ui-grid-a ui-responsive">
+	<div class="ui-block-a"><a href="#popupbosque" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/bosque.jpg" alt="bosque"></a></div>
+ 	<div class="ui-block-b"><a href="#popupciudad" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true" ><img class="popphoto" src="img/ciudad.jpg"></a></div>
+	<div class="ui-block-a"><a href="#popupplaya" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/playa.jpg"></a></div>
+	<div class="ui-block-b"><a href="#popupplaza" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img
+    class="popphoto" src="img/plaza.jpg"></a></div>
+</div>
+
+<!-- Start pop up lugares-->
+
+<div data-role="popup" id="popupbosque" data-corners="false">
+<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
+<h3>bosque</h3><h4>oscuro y tenebroso</h4><img src="img/bosque.jpg">
+	<form>
+		<label>
+		<input type="checkbox" name="checkbox-0">Confirmar lugar
+		</label>
+	</form>
+</div>
+
+<div data-role="popup" id="popupciudad" data-corners="false">
+<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
+<h3>ciudad</h3><h4>silenciosa y tranquila</h4><img src="img/ciudad.jpg">
+	<form>
+		<label>
+		<input type="checkbox" name="checkbox-0">Confirmar lugar
+		</label>
+	</form>
+</div>
+
+<div data-role="popup" id="popupplaya" data-corners="false">
+<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
+<h3>playa</h3><h4>amplia y soleada<h4><img src="img/playa.jpg">
+	<form>
+		<label>
+		<input type="checkbox" name="checkbox-0">Confirmar lugar
+		</label>
+	</form>
+</div>
+
+<div data-role="popup" id="popupplaza" data-corners="false">
+<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
+<h3>plaza</h3><h4>divertida y colorida<h4><img src="img/plaza.jpg">
+	<form>
+		<label>
+		<input type="checkbox" name="checkbox-0">Confirmar lugar
+		</label>
+	</form>
+</div>
+<div data-role="footer" class="elfooter" ><h2>Elegir lugar</h2>
+</div>
+</div>
+<!-- Start page of tipos de final  -->
+</div>
+<div data-role="page" id="finales" data-transition="slide">
+<div data-role="header" data-theme="c" class="elheader" ><span data-role="none"><a href="#lugares"> <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</button></a></span><h1>cuentos cortos<h1>
+</div>
+<div data-role="navbar">
+<ul>
+<li><a href="#personajes" data-transition="slide">personajes</a></li>
+<li><a href="#lugares" data-transition="slide">lugares</a></li>
+<li><a href="#" class="ui-btn-active">finales</a></li>
+</ul>
+</div>
+	<div role="main" class="ui-content">   
+<p><span>armá tu cuento</span></p><p>según tu capricho</p>   
+    </div>
+	<div data-role="footer" class="elfooter"><h2>Elegir tipo de final</h2></div>
+    
+
+</div>
+
+<!-- Start of cuento page -->
+
+<div data-role="page" id="cuento">	
+<div data-role="header" data-theme="c" class="elheader" > <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</button><h1>cuentos cortos<h1>
+</div>
+
+     <div role="main" class="ui-content">
+   
+<p>Había una vez una pequeña mascota llamada ___________________ que caminaba siempre inquieta y curiosa. Un día encontró un globo que volaba divertido haciendo piruetas por el aire y comenzó a seguirlo hasta que</p> 
+   
+    </div>
+     
+	<div data-role="footer">cuento</div>
+    	
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>
