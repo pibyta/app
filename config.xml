@@ -21,7 +21,7 @@
         following tag to your config.xml; you will still have the INTERNET
         permission on your app, which PhoneGap requires.
     -->
-    <preference name="permissions"                value="none"/>
+    <preference name="permissions" value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
     <platform name="android">
@@ -37,32 +37,6 @@
     <splash src="res/screens/android/splash-port-xhdpi.png" density="port-xhdpi"/>
 </platform>
 
-<platform name="ios">
-    <!-- images are determined by width and height. The following are supported -->
-    <splash src="res/screens/ios/Default~iphone.png" width="320" height="480"/>
-    <splash src="res/screens/ios/Default@2x~iphone.png" width="640" height="960"/>
-    <splash src="res/screens/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
-    <splash src="res/screens/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
-    <splash src="res/screens/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
-    <splash src="res/screens/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
-    <splash src="res/screens/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
-    <splash src="res/screens/ios/Default-667h.png" width="750" height="1334"/>
-    <splash src="res/screens/ios/Default-736h.png" width="1242" height="2208"/>
-    <splash src="res/screens/ios/Default-Landscape-736h.png" width="2208" height="1242"/>
-</platform>
-
-<platform name="windows">
-    <!-- images are determined by width and height. The following are supported -->
-    <splash src="res/screens/windows/splashscreen.png" width="620" height="300"/>
-    <splash src="res/screens/windows/splashscreenphone.png" width="1152" height="1920"/>
-</platform>
-
-<platform name="blackberry10">
-    <!-- Add a rim:splash element for each resolution and locale you wish -->
-    <!-- http://developer.blackberry.com/html5/documentation/rim_splash_element.html -->
-    <rim:splash src="res/screens/blackberry/splashscreen.png"/>
-</platform>
-
 <preference name="SplashScreenDelay" value="10000" />
 
     <!-- Plugins -->
@@ -71,18 +45,14 @@
 <preference name="SplashScreenDelay" value="10000" />
 
 <preference name="SplashMaintainAspectRatio" value="true" />
-    <!-- Core plugins -->
-    <gap:plugin name="org.apache.cordova.geolocation" />
+ 
 
     <!-- Define app icon for each platform. This is a relative path to config.xml.
         For e.g. if you place an icon.png inside res folder, you should modify the
         src in the following setting to "res/icon.png" -->
     <icon src="icon.png" />
 
-    <!-- Define app splash screen for each platform. -->
-
-
-
+   
     <access />
 
 
