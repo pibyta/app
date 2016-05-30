@@ -30,15 +30,17 @@ letter-spacing:2pt;
 }
 
 h2{
+	font-size:0.5em;
 font-family: 'FVAlmeloRegular';
 letter-spacing:2pt;	
 }
+
 
 h3{text-align:center;
 font-family: 'fishfingersregular';
 font-weight:bold;
 text-transform:uppercase;
-font-size:30px;
+font-size:2em;
 letter-spacing:5pt;
 color:#FFF;
 
@@ -54,7 +56,7 @@ font-family: 'FVAlmeloRegular';
 text-align:center;
 letter-spacing:3pt;
 color:#000;
-font-size:18px;
+font-size:1em;
 font-style: normal;
 }
 
@@ -110,9 +112,13 @@ margin:0;
 padding:0;
 border:none;
 }
-	
+
+.elheader a{
+	background-color:#869ea5;
+	color:#000;
+}
 .elheader, .elfooter{
-height:3em;
+height:2em;
 }
 .elfooter{
 	background-color:#869ea5;
