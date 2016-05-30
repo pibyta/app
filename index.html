@@ -35,7 +35,7 @@
 
 
 <div role="main" class="ui-content">
-  	<p><span>El personaje de tu cuento</span></p><p>según tu capricho</p> </div>
+  	<p><span>Un personaje</span></p><p>según tu capricho</p> </div>
 
 
 	<div class="ui-grid-a ui-responsive">
@@ -85,7 +85,7 @@
 	</form>
 </div>
 
-<div data-role="footer" class="elfooter"><h2>Elegir personaje</h2>
+<div data-role="footer" class="elfooter" data-position="fixed"><h2>Elegir personaje</h2>
 </div>
 </div> 
 
@@ -94,7 +94,8 @@
 
 <div data-role="page" id="lugares" data-transition="slide">
 
-<div data-role="header" data-theme="c" class="elheader"><span data-role="none"><a href="#personajes"><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</button></a><a href="#personajes"><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-home ui-btn-icon-notext">home</button></a></span><h1>cuentos cortos<h1>
+<div data-role="header" data-theme="a" class="elheader"><a href="#personajes" class="ui-btn-left ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</a>
+<h1>cuentos cortos<h1><a href="#personajes" class="ui-btn-right ui-shadow ui-corner-all ui-btn-icon-right ui-icon-home ui-btn-icon-notext">home</a>
 </div>
 
 <div data-role="navbar">
@@ -157,15 +158,15 @@
 	</form>
 </div>
 
-<div data-role="footer" class="elfooter"><h2>Elegir lugar</h2>
+<div data-role="footer" class="elfooter" data-position="fixed"><h2>Elegir lugar</h2>
 </div>
 </div>
 <!-- Start page of tipos de final  -->
 
-
 <div data-role="page" id="finales" data-transition="slide">
 
-<div data-role="header" data-theme="c" class="elheader" ><span data-role="none"><a href="#lugares"> <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</button></a><a href="#personajes"><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-home ui-btn-icon-notext">home</button></a></span><h1>cuentos cortos<h1>
+<div data-role="header" data-theme="a" class="elheader" ><a href="#personajes" class="ui-btn-left ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</a>
+<h1>cuentos cortos<h1><a href="#lugares" class="ui-btn-right ui-shadow ui-corner-all ui-btn-icon-right ui-icon-home ui-btn-icon-notext">home</a>
 </div>
 
 <div data-role="navbar">
@@ -228,17 +229,10 @@
 	</form>
 </div>
 
-
-
-
-
-
 </div>
 
-<div data-role="footer" class="elfooter"><h2>Elegir tipo de final</h2>
+<div data-role="footer" class="elfooter" data-position="fixed"><h2>Elegir tipo de final</h2>
 </div>
-    
-
 </div>
 
 <!-- Start of cuento page -->
@@ -253,7 +247,7 @@
    
     </div>
      
-	<div data-role="footer">cuento</div>
+	<div data-role="footer" data-position="fixed"><h2>tu cuento</h2></div>
     	
 </div>
 <script src="javascript.js"></script>
