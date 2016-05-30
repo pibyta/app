@@ -1,8 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
 @font-face {
     font-family:'fishfingersregular';
     src:url(tipografias/fishfingers-webfont.eot);
@@ -23,7 +21,6 @@
 	src:url(tipografias/fv_almelo-webfont.woff);
      font-weight: normal;
     font-style: normal;
-
 }
 
 h1{ text-transform:uppercase;
@@ -41,14 +38,14 @@ h3{text-align:center;
 font-family: 'fishfingersregular';
 font-weight:bold;
 text-transform:uppercase;
-font-size:60px;
+font-size:30px;
 letter-spacing:5pt;
 color:#FFF;
 
 }
 
 #popupmimosin, #popuppichibu, #popuppintita, #popuptuntun,
-#popupbosque,#popupciudad, #popupplaza, #popupplaya{
+#popupbosque,#popupciudad, #popupplaza, #popupplaya, #popupinesperado,#popupfeliz, #popupsorpresivo,#popuptriste{
 	background-color:#869ea5;
 }
 
@@ -57,7 +54,7 @@ font-family: 'FVAlmeloRegular';
 text-align:center;
 letter-spacing:3pt;
 color:#000;
-font-size:24px;
+font-size:18px;
 font-style: normal;
 }
 
@@ -92,7 +89,7 @@ body{
 color:#fcf07e;
 font-family: 'fishfingersregular';
 font-weight:bold;
-font-size:38px;
+font-size:26px;
 letter-spacing:5pt;
 width:100%;
 }
@@ -102,7 +99,7 @@ font-family: 'FVAlmeloRegular';
 text-align:center;
 letter-spacing:5pt;
 color:#000;
-font-size:22px;
+font-size:18px;
 font-style: normal;
 }
 
