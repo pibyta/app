@@ -91,7 +91,7 @@ border:none;
 	color:#fcf07e;
 	font-family: 'fishfingersregular';
 	font-weight:bold;
-	font-size:2em;
+	font-size:1.5em;
 	letter-spacing:5pt;
 	width:100%;
 	text-transform:uppercase;
@@ -122,8 +122,9 @@ font-family: 'FVAlmeloRegular';
 background-color:#cdddcd7;
 color:#60605d;
 }
-
-#suscribir{
+#logo{
+}
+#suscribir, #otrocuento{
 	background-color:#fcf07e;
 	width:60%;
 	margin:0 auto;
