@@ -11,8 +11,7 @@
 	font-weight: normal;
     font-style: normal;
 }  
-@font-face {
-	
+@font-face {	
     font-family: 'FVAlmeloRegular';
     src:url(tipografias/FV_Almelo.ttf);
 	src:url(tipografias/fv_almelo-webfont.eot);
@@ -27,14 +26,14 @@ h1{ text-transform:uppercase;
 color:#999;
 font-family: 'FVAlmeloRegular';
 letter-spacing:2pt;	
+border:none;
 }
 
 h2{
-	font-size:0.5em;
 font-family: 'FVAlmeloRegular';
-letter-spacing:2pt;	
+letter-spacing:2pt;
+border:none;	
 }
-
 
 h3{text-align:center;
 font-family: 'fishfingersregular';
@@ -43,28 +42,31 @@ text-transform:uppercase;
 font-size:2em;
 letter-spacing:5pt;
 color:#FFF;
-
+border:none;
 }
+
 
 #popupmimosin, #popuppichibu, #popuppintita, #popuptuntun,
 #popupbosque,#popupciudad, #popupplaza, #popupplaya, #popupinesperado,#popupfeliz, #popupsorpresivo,#popuptriste{
 	background-color:#869ea5;
+	width:90%;
 }
 
 h4{ 
-font-family: 'FVAlmeloRegular';
-text-align:center;
-letter-spacing:3pt;
-color:#000;
-font-size:1em;
-font-style: normal;
+	font-family: 'FVAlmeloRegular';
+	text-align:center;
+	letter-spacing:3pt;
+	color:#000;
+	font-size:1em;
+	font-style: normal;
+	border:none;
 }
 
 img{
 	margin:0;
 	padding:0;
 	width:100%;
-height:auto;
+	height:auto;
 }
 
 body{
@@ -74,59 +76,54 @@ body{
 	background-color:#869ea5;
 	}
 	
-
+#personajes,#lugares,#finales,#cuento{
+background-color:#869ea5;
+border:none;
+}
 .ui-content{
 	background-color:#869ea5;
-	text-transform:uppercase;
-	margin:0;
+	margin: 0 2em;
 	padding:0;
-}
-
-.ui-content p{
-	color:#000;
-	text-align:center;
+	border:none;
 }
 	
 .ui-content p span{
-color:#fcf07e;
-font-family: 'fishfingersregular';
-font-weight:bold;
-font-size:26px;
-letter-spacing:5pt;
-width:100%;
-}
-.ui-content p{
-color:#FFF;
-font-family: 'FVAlmeloRegular';
-text-align:center;
-letter-spacing:5pt;
-color:#000;
-font-size:18px;
-font-style: normal;
-}
-
-.ui-grid-a ui-responsive button{
-max-width:50%;
-height:auto;
-margin:0;
-padding:0;
-border:none;
-}
-
-.elheader a{
-	background-color:#869ea5;
-	color:#000;
-}
-.elheader, .elfooter{
-height:2em;
-}
-.elfooter{
-	background-color:#869ea5;
+	color:#fcf07e;
+	font-family: 'fishfingersregular';
+	font-weight:bold;
+	font-size:2em;
+	letter-spacing:5pt;
+	width:100%;
+	text-transform:uppercase;
 	border:none;
 }
-a{
-	margin:0;
-	padding:0;
-	border:none;	
+.ui-content p{
+	color:#FFF;
+	font-family: 'FVAlmeloRegular';
+	text-align:center;
+	letter-spacing:5pt;
+	color:#000;
+	font-size:1em;
+	border:none;
 }
+
+.ui-content p.cuento{
+font-family:'arial';
+font-size:1em;
+color:#FFF;
+text-align:justify;
+letter-spacing:1pt;
+border:none;
+font-style:normal;
+
+}
+.elheader{
+	height:2.5em;
+}
+.elfooter{
+	height:2em;
+}
+
+
+
 
