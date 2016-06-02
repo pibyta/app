@@ -1,7 +1,14 @@
 // JavaScript Document
 document.addEventListener("devideReady",arrancar,false);
 
+ // acceso a fuentes remotas en Phonegap        
+        $( document ).bind( "mobileinit", function() {
+            $.support.cors = true;
+            $.mobile.allowCrossDomainPages = true;
+        });
+		
 function arrancar(){
+	
 	//apenas arranca debe traer las imagenes
 		//urlabsoluta/funcion
 //getJSON("http:www.capricholucero/app/img_personajes.php",datos,mostrarImgPersonajes);

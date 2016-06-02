@@ -5,6 +5,7 @@
 <title>Cuentos para leer antes de apagar la luz</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 <script src="jquery-1.12.3.min.js"></script>
 <script src="jquery.mobile-1.4.5.min.js"></script>
@@ -66,6 +67,7 @@
 <div data-role="page" id="lugares" data-transition="flip">
 <div data-role="header" data-theme="c" class="elheader"><a href="#personajes" data-transition="flow" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</a><h1>cuentos cortos<h1>
 </div>
+
 <div role="main" class="ui-content"><p><span>Un lugar</span></p><p>según tu capricho</p></div>
 <div class="ui-grid-a ui-responsive">
 	<div class="ui-block-a"><a href="#popupbosque" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/bosque.jpg" alt="bosque"></a></div> 	<div class="ui-block-b"><a href="#popupciudad" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/ciudad.jpg" alt="ciudad"></a></div>	<div class="ui-block-a"><a href="#popupplaya" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/playa.jpg" alt="playa"></a></div>
@@ -150,16 +152,50 @@
 
 <div role="main" class="ui-content">
  
-<p><span>Había una vez</span>  
+<p><span>Había una vez</span> </p>  
 <p class="cuento">Una pequeña mascota llamada ___________________ que caminaba siempre inquieta y curiosa. Un día encontró un globo que volaba divertido haciendo piruetas por el aire y comenzó a seguirlo hasta que
 
-</p> 
-<a href="#personajes" class="ui-btn" data-transition="flow">Armar otro cuento</a>   
+</p>
+
+<p><span>Fin</span> </p>   
+<a href="#personajes" class="ui-btn" data-transition="flow">Armar otro cuento</a> 
+
+<p><span>tu lámpara con el personaje de esta historia</span> </p>   
     </div>
      
 	<div data-role="footer" data-position="fixed"><h2>tu cuento</h2></div>
     	
 </div>
+
+<!-- Start of suscripcion page -->
+<div data-role="page" id="suscripcion">	
+<div data-role="header" data-theme="c" class="elheader"><a href="#cuento" data-transition="flow" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</a><h1>cuentos cortos<h1>
+</div>
+
+<div role="main" class="ui-content">
+
+ 
+<p><span>Lámparas con dibujitos</span><p> 
+Subscribite para recibir novedades
+sobre los productos</p> 
+
+<form> 
+<input type="text" id="textinput" value="nombre">
+<input type="email" id="email" value="mail">
+<button type="submit" id="suscribir"> Suscribirme </button>
+</form>   
+</div>
+
+
+
+
+
+
+     
+<div data-role="footer" data-position="fixed"><h2>suscribite ahora</h2></div>
+    	
+</div>
+
 <script src="javascript.js"></script>
 </body>
 </html>
