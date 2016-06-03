@@ -1,22 +1,29 @@
 // JavaScript Document
-document.addEventListener("devideReady",arrancar,false);
+//document.addEventListener("deviceReady",arrancar,false);
+//apenas arranca debe traer las imagenes
 
- // acceso a fuentes remotas en Phonegap        
-        $( document ).bind( "mobileinit", function() {
-            $.support.cors = true;
-            $.mobile.allowCrossDomainPages = true;
-        });
-		
-function arrancar(){
+//function arrancar(){
+
+
+$(document).ready(function(){
+	$.getJSON("http://www.capricholucero.xyz/app/nombre_pers.php", function(resultados){
+			
+    	for(var i=0;i<resultados.length;i++){
+			$.each(resultados[i], function(i, campo){
+            	$("#mimosin").append(campo);
+            });
+			}
+    
 	
-	//apenas arranca debe traer las imagenes
+	});
+});
 		//urlabsoluta/funcion
 //getJSON("http:www.capricholucero/app/img_personajes.php",datos,mostrarImgPersonajes);
 
 //getJSON("http:www.capricholucero/app/img_lugares.php",datos,mostrarImgLugares);
 
 //getJSON("http:www.capricholucero/app/img_finales.php",datos,mostrarImgFinales);
-}
+//}
 
 
 	
