@@ -122,22 +122,27 @@ font-family: 'FVAlmeloRegular';
 background-color:#cdddcd7;
 color:#60605d;
 }
-#logo{
-}
-#suscribir, #otrocuento{
+
+
+#otrocuento{
 	background-color:#fcf07e;
 	width:60%;
 	margin:0 auto;
 	
 }
-ui-btn.a:hover{
-	background-color:#333;
+a.confirmar{
+width:80%;
+margin:0 auto;
+margin-top:2%;
+margin-bottom:2%;
 }
+
 .elheader{
 	height:2.5em;
 }
 .elfooter{
 	height:2em;
+		
 }
 
 
