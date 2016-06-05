@@ -17,6 +17,10 @@ $(document).ready(function(){
 	
 	});
 });
+
+
+
+
 		//urlabsoluta/funcion
 //getJSON("http:www.capricholucero/app/img_personajes.php",datos,mostrarImgPersonajes);
 
