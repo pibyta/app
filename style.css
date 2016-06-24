@@ -45,9 +45,7 @@ color:#FFF;
 border:none;
 }
 
-
-#popupmimosin, #popuppichibu, #popuppintita, #popuptuntun,
-#popupbosque,#popupciudad, #popupplaza, #popupplaya, #popupinesperado,#popupfeliz, #popupsorpresivo,#popuptriste{
+#pop0, #pop1, #pop2, #pop3,#pop4, #pop5, #pop6, #pop7, #poplugar0, #poplugar1, #poplugar2,#poplugar3,#popfinal0,#popfinal1,#popfinal2,#popfinal3{
 	background-color:#869ea5;
 	width:90%;
 }
@@ -107,7 +105,7 @@ border:none;
 	border:none;
 }
 
-.ui-content p.cuento{
+.ui-content, #elcuento{
 font-family:'arial';
 font-size:1em;
 color:#FFF;

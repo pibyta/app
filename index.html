@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
 <title>Cuentos para leer antes de apagar la luz</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,119 +25,62 @@
 <!-- Start of personajes -->
 <div data-role="page" id="personajes" data-transition="flip">
 
-	<div data-role="header" data-theme="c" class="elheader"><h1>cuentos cortos<h1>
+	<div data-role="header" data-theme="c" class="elheader"><h1>arma cuentos<h1>
 	</div>	
-<div role="main" class="ui-content"><p><span>Un personaje</span></p><p>según tu capricho</p> 
-</div>
-	<div class="ui-grid-a ui-responsive">
-<div class="ui-block-a"><a href="#popupmimosin" data-rel="popup"  data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/mimosin.jpg"></a></div>
-<div class="ui-block-b"><a href="#popuppichibu" data-rel="popup"  data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/pichibu.jpg" alt="pichibu"></a></div>
-<div class="ui-block-a"><a href="#popuppintita" data-rel="popup"  data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto"  src="img/pintita.jpg" alt="pintita"></a></div>
-<div class="ui-block-b"><a href="#popuptuntun" data-rel="popup"  data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto"  src="img/tuntun.jpg" alt="tuntun"></a></div>
-</div>
+    
+<div role="main" class="ui-content"><p><span>Elegí un personaje</span></p><p>según tu capricho</p></div>
+
+<div class="ui-grid-a ui-responsive" id="grillapersonajes">
 
 <!-- Start pop up personajes-->
-<div data-role="popup" id="popupmimosin" data-corners="false">
-	<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
-	<h3 id="mimosin"></h3><h4>Tranquilo y atento</h4><img src="img/mimosin.jpg">
-    <a href="#lugares" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip" id="confirmar1">confirmar personaje</a> 
-</div>
-	<div data-role="popup" id="popuppichibu" data-corners="false">
-	<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow 	ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
-	<h3>pichibu</h3><h4>Inquieto y curioso</h4><img src="img/pichibu.jpg">
-	<a href="#lugares" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip" id="confirmar2">confirmar personaje</a> 
-</div>
-<div data-role="popup" id="popuppintita" data-corners="false">
-<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
-<h3>pintita</h3><h4>Movedizo y saltarín</h4><img src="img/pintita.jpg">
-	<a href="#lugares" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip" id="confirmar3" >confirmar personaje</a> 
-</div>
 
-<div data-role="popup" id="popuptuntun" data-corners="false">
-	<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
-<h3>tun tun</h3><h4>Vergonzoso y dudoso</h4><img src="img/tuntun.jpg">
-	<a href="#lugares" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip" id="confirmar4" >confirmar personaje</a> 
+<div data-role="popup" id="pop0" data-corners="false"></div>
+<div data-role="popup" id="pop1" data-corners="false"></div>
+<div data-role="popup" id="pop2" data-corners="false"></div>
+<div data-role="popup" id="pop3" data-corners="false"></div>
+<div data-role="popup" id="pop4" data-corners="false"></div>
+<div data-role="popup" id="pop5" data-corners="false"></div>
+<div data-role="popup" id="pop6" data-corners="false"></div>
+<div data-role="popup" id="pop7" data-corners="false"></div>
 </div>
-
 </div> 
 
 
 <!-- Start of lugares page -->
 
 <div data-role="page" id="lugares" data-transition="flip">
-<div data-role="header" data-theme="c" class="elheader"><a href="#personajes" data-transition="flow" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</a><h1>cuentos cortos<h1>
-</div>
 
-<div role="main" class="ui-content"><p><span>Un lugar</span></p><p>según tu capricho</p></div>
-<div class="ui-grid-a ui-responsive">
-	<div class="ui-block-a"><a href="#popupbosque" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/bosque.jpg" alt="bosque"></a></div> 	<div class="ui-block-b"><a href="#popupciudad" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/ciudad.jpg" alt="ciudad"></a></div>	<div class="ui-block-a"><a href="#popupplaya" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/playa.jpg" alt="playa"></a></div>
-	<div class="ui-block-b"><a href="#popupplaza" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/plaza.jpg" alt="plaza"></a></div>
-</div>
+<div data-role="header" data-theme="c" class="elheader"><a href="#personajes" data-transition="flow" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</a><h1>arma cuentos</h1></div>
+
+<div role="main" class="ui-content"><p><span>Elegí un lugar</span></p><p>según tu capricho</p></div>
+
+<div class="ui-grid-a ui-responsive" id="grillalugares">
 
 <!-- Start pop up lugares-->
-<div data-role="popup" id="popupbosque" data-corners="false">
-<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a><h3>bosque</h3><h4>oscuro y tenebroso</h4><img src="img/bosque.jpg" alt="bosque"><a href="#finales" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar lugar</a> 
+<div data-role="popup" id="poplugar0" data-corners="false"></div>  
+<div data-role="popup" id="poplugar1" data-corners="false"></div>
+<div data-role="popup" id="poplugar2" data-corners="false"></div>
+<div data-role="popup" id="poplugar3" data-corners="false"></div>
+</div>
 </div>
 
-<div data-role="popup" id="popupciudad" data-corners="false">
-<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
-<h3>ciudad</h3><h4>silenciosa y tranquila</h4><img src="img/ciudad.jpg" alt="ciudad"><a href="#finales" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar lugar</a>
-</div>
 
-<div data-role="popup" id="popupplaya" data-corners="false">
-<a href="#lugares" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a><h3>playa</h3><h4>amplia y soleada<h4><img src="img/playa.jpg" alt="playa"><a href="#finales" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar lugar</a> 
-</div>
-
-<div data-role="popup" id="popupplaza" data-corners="false">
-<a href="#finales" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">cerrar</a><h3>plaza</h3><h4>divertida y colorida<h4><img src="img/plaza.jpg" alt="playa"><a href="#finales" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar lugar</a> 
-</div>
-</div>
-</div>
 <!-- Start page of tipos de final  -->
 
 <div data-role="page" id="finales" data-transition="flip">
 
-<div data-role="header" data-theme="c" class="elheader"><a href="#lugares" data-transition="flow" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</a><h1>cuentos cortos<h1>
+<div data-role="header" data-theme="c" class="elheader"><a href="#lugares" data-transition="flow" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l ui-btn-icon-notext">anterior</a><h1>arma cuentos</h1></div>
+
+<div role="main" class="ui-content"><p><span>Elegí un tipo de final</span></p><p>según tu capricho</p></div>
+
+<div class="ui-grid-a ui-responsive" id="grillafinales">
+<!-- Start pop up finales-->
+
+<div data-role="popup" id="popfinal0" data-corners="false"></div>
+<div data-role="popup" id="popfinal1" data-corners="false"></div>
+<div data-role="popup" id="popfinal2" data-corners="false"></div>
+<div data-role="popup" id="popfinal3" data-corners="false"></div>
 </div>
-
-<div role="main" class="ui-content"><p><span>Un tipo de final</span></p><p>según tu capricho</p></div>
-
-<div class="ui-grid-a ui-responsive">
-
-	<div class="ui-block-a"><a href="#popupsorpresivo" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/sorpresivo.jpg" alt="sorpresivo"></a></div>
- 	<div class="ui-block-b"><a href="#popupfeliz" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/feliz.jpg" alt="feliz"></a>
-</div>
-	<div class="ui-block-a"><a href="#popupinesperado" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/inesperado.jpg" alt="inesperado"></a></div>
-	<div class="ui-block-b"><a href="#popuptriste" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/triste.jpg" alt="triste"></a>
-</div>
-
-
-<!-- Start pop up lugares-->
-
-<div data-role="popup" id="popupsorpresivo" data-corners="false">
-	<a href="#finales" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
-	<h3>final sorpresivo</h3><img src="img/sorpresivo.jpg">
-	<a href="#cuento" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar final</a> 
-</div>
-	<div data-role="popup" id="popupfeliz" data-corners="false">
-	<a href="#finales" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
-	<h3>final feliz</h3><img src="img/feliz.jpg">
-	<a href="#cuento" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar final</a> 
-</div>
-<div data-role="popup" id="popupinesperado" data-corners="false">
-<a href="#finales" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
-<h3>final inesperado</h3><img src="img/inesperado.jpg">
-	<a href="#cuento" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar final</a> 
-</div>
-<div data-role="popup" id="popuptriste" data-corners="false">
-	<a href="#finales" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
-<h3>final triste</h3><img src="img/triste.jpg">
-	<a href="#cuento" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar final</a> 
-</div>
-
-</div>
-
-
 </div>
 
 <!-- Start of cuento page -->
@@ -148,9 +92,7 @@
 <div role="main" class="ui-content">
  
 <p><span>Había una vez</span> </p>  
-<p class="cuento">Una pequeña mascota llamada ___________________ que caminaba siempre inquieta y curiosa. Un día encontró un globo que volaba divertido haciendo piruetas por el aire y comenzó a seguirlo hasta que
-
-</p>
+<p id="elcuento">esto es el cuento</p>
 
 <p><span>Fin</span> </p>  
 <img src="img/logo_app_transp.png" id="logoapp"> 
