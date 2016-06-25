@@ -39,26 +39,31 @@ h3{text-align:center;
 font-family: 'fishfingersregular';
 font-weight:bold;
 text-transform:uppercase;
-font-size:2em;
+font-size:1.8em;
 letter-spacing:5pt;
 color:#FFF;
 border:none;
+margin:0;
+padding:0;
 }
 
-#pop0, #pop1, #pop2, #pop3,#pop4, #pop5, #pop6, #pop7, #poplugar0, #poplugar1, #poplugar2,#poplugar3,#popfinal0,#popfinal1,#popfinal2,#popfinal3{
+#poppersonaje0, #poppersonaje1, #poppersonaje2, #poppersonaje3, #poplugar0, #poplugar1, #poplugar2,#poplugar3,#popfinal0,#popfinal1,#popfinal2,#popfinal3{
 	background-color:#869ea5;
-	width:90%;
+	width:80%;
+	
 }
 
-h4{ 
+h4{ margin:0;
+padding:0;
 	font-family: 'FVAlmeloRegular';
 	text-align:center;
 	letter-spacing:3pt;
 	color:#000;
-	font-size:1em;
+	font-size:.8em;
 	font-style: normal;
 	border:none;
-}
+	max-height:8px;
+	}
 
 img{
 	margin:0;
@@ -105,7 +110,7 @@ border:none;
 	border:none;
 }
 
-.ui-content, #elcuento{
+#elcuento p{
 font-family:'arial';
 font-size:1em;
 color:#FFF;
