@@ -12,8 +12,8 @@ $.mobile.allowCrossDomainPages = true;
 $(document).ready(function(){
 	
 //PAGINA PERSONAJES**************************************************************************
-$.getJSON("http://localhost/capricho/app/traer_img_dibu.php", function(rutadibu){		
-//$.getJSON("http://www.capricholucero.xyz/app/traer_img_dibu.php", function(imagen){
+//$.getJSON("http://localhost/capricho/app/traer_img_dibu.php", function(rutadibu){		
+$.getJSON("http://www.capricholucero.xyz/app/traer_img_dibu.php", function(rutadibu){
 	
 	$.each(rutadibu, function(i, campos){
 
@@ -39,7 +39,8 @@ $(idpers).append('<div><a href="#poppersonaje'+i+'" data-rel="popup" data-positi
 });/*cierre $.getJSON*/	
 
 //coloco el nombre de los personajes a los popup	
-$.getJSON("http://localhost/capricho/app/traer_nombre_dibu.php", function(nombredibu){	
+$.getJSON("http://www.capricholucero.xyz/app/traer_nombre_dibu.php", function(nombredibu){
+//$.getJSON("http://localhost/capricho/app/traer_nombre_dibu.php", function(nombredibu){	
 
 	$.each(nombredibu, function(i, campos){
 		
@@ -55,8 +56,8 @@ $.getJSON("http://localhost/capricho/app/traer_nombre_dibu.php", function(nombre
 });/*cierre $.getJSON*/
 			
 //coloco la descripcion de los personajes a los popup	
-$.getJSON("http://localhost/capricho/app/traer_descrip_dibu.php", function(descripdibu){
-//$.getJSON("http://www.capricholucero.xyz/app/traer_descrip_dibu.php", function(descripcion){
+//$.getJSON("http://localhost/capricho/app/traer_descrip_dibu.php", function(descripdibu){
+$.getJSON("http://www.capricholucero.xyz/app/traer_descrip_dibu.php", function(descripdibu){
 
 	//alert (descripcion.length);		
 		$.each(descripdibu, function(i, campos){
@@ -69,8 +70,8 @@ $.getJSON("http://localhost/capricho/app/traer_descrip_dibu.php", function(descr
 });	/*cierre $.getJSON*/	
 					
 //coloco la imagen de los personajes a los popup			
-$.getJSON("http://localhost/capricho/app/traer_img_dibu.php", function(rutadibu){	
-			
+$.getJSON("http://www.capricholucero.xyz/app/traer_img_dibu.php", function(rutadibu){	
+//$.getJSON("http://localhost/capricho/app/traer_img_dibu.php", function(rutadibu){				
 		$.each(rutadibu, function(i, campos){
 		var idpop='#poppersonaje'+i;		
 		$(idpop).append('<div><div><img src="http://www.capricholucero.xyz/app/img/'+campos.rutadibu+'"></div><a href="#lugares" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip" id="btnpers'+i+'">confirmar personaje</a></div>');
@@ -105,8 +106,8 @@ var btnpresionado="'#btnpers"+n+"'";
 
 //PAGINA LUGARES*************************************************************************
 
-$.getJSON("http://localhost/capricho/app/traer_img_lugar.php", function(imagen){		
-//$.getJSON("http://www.capricholucero.xyz/app/traer_img_lugar.php", function(imagen){
+//$.getJSON("http://localhost/capricho/app/traer_img_lugar.php", function(imagen){		
+$.getJSON("http://www.capricholucero.xyz/app/traer_img_lugar.php", function(imagen){
 	$.each(imagen, function(i, campos){
 
 //creo dinamicamente el div de la grilla a o b segun si el nro de vuelta si es par o impar
@@ -129,8 +130,8 @@ $.getJSON("http://localhost/capricho/app/traer_img_lugar.php", function(imagen){
 
 //*******************************************************************************************
 //coloco el nombre de los LUGARES a los popup	
-$.getJSON("http://localhost/capricho/app/traer_nombre_lugar.php", function(nombrelugar){	
-
+//$.getJSON("http://localhost/capricho/app/traer_nombre_lugar.php", function(nombrelugar){	
+$.getJSON("http://www.capricholucero.xyz/app/traer_nombre_lugar.php", function(nombrelugar){	
 	$.each(nombrelugar, function(i, campos){
 		
 	var idpoplugar='#poplugar'+i;
@@ -145,8 +146,8 @@ $.getJSON("http://localhost/capricho/app/traer_nombre_lugar.php", function(nombr
 
 //*******************************************************************************************			
 //coloco la descripcion de los lugares a los popup	
-$.getJSON("http://localhost/capricho/app/traer_descrip_lugar.php", function(descriplugar){
-//$.getJSON("http://www.capricholucero.xyz/app/traer_descrip_lugar.php", function(descripcion){
+//$.getJSON("http://localhost/capricho/app/traer_descrip_lugar.php", function(descriplugar){
+$.getJSON("http://www.capricholucero.xyz/app/traer_descrip_lugar.php", function(descriplugar){
 
 		
 		$.each(descriplugar, function(i, campos){
@@ -157,8 +158,8 @@ $.getJSON("http://localhost/capricho/app/traer_descrip_lugar.php", function(desc
 });/*cierre $.getJSON*/		
 					
 //coloco la imagen de los personajes a los popup			
-$.getJSON("http://localhost/capricho/app/traer_img_lugar.php", function(rutalugar){	
-			
+//$.getJSON("http://localhost/capricho/app/traer_img_lugar.php", function(rutalugar){	
+$.getJSON("http://www.capricholucero.xyz/app/traer_img_lugar.php", function(rutalugar){			
 			$.each(rutalugar, function(i, campos){
 				var idpoplugar='#poplugar'+i;		
 			$(idpoplugar).append('<div><div><img src="http://localhost/capricho/app/img/'+campos.rutalugar+'"></div><a href="#finales" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar lugar</a></div>');
@@ -169,7 +170,8 @@ $.getJSON("http://localhost/capricho/app/traer_img_lugar.php", function(rutaluga
 
 //PAGINA FINALES************************************************
 
-$.getJSON("http://localhost/capricho/app/traer_img_final.php", function(imagen){	
+//$.getJSON("http://localhost/capricho/app/traer_img_final.php", function(rutafinal){
+$.getJSON("http://www.capricholucero.xyz/app/traer_img_final.php", function(rutafinal){			
 	$.each(imagen, function(i, campos){
 
 //creo dinamicamente el div de la grilla a o b segun si el nro de vuelta si es par o impar
@@ -187,8 +189,8 @@ $.getJSON("http://localhost/capricho/app/traer_img_final.php", function(imagen){
 });	/*cierre $.getJSON*/
 
 //coloco el nombre de los finales a los popup	
-$.getJSON("http://localhost/capricho/app/traer_nombre_final.php", function(nombrefinal){	
-
+//$.getJSON("http://localhost/capricho/app/traer_nombre_final.php", function(nombrefinal){	
+$.getJSON("http://www.capricholucero.xyz/app/traer_nombre_final.php", function(nombrefinal){	
 	$.each(nombrefinal, function(i, campos){
 		
 	var idpopfinal='#popfinal'+i;
@@ -202,8 +204,8 @@ $.getJSON("http://localhost/capricho/app/traer_nombre_final.php", function(nombr
 
 
 //coloco la imagen de los finales a los popup			
-$.getJSON("http://localhost/capricho/app/traer_img_final.php", function(rutafinal){	
-			
+//$.getJSON("http://localhost/capricho/app/traer_img_final.php", function(rutafinal){	
+$.getJSON("http://www.capricholucero.xyz/app/traer_img_final.php", function(rutafinal){			
 		$.each(rutafinal, function(i, campos){
 		var idpopfinal='#popfinal'+i;		
 		$(idpopfinal).append('<div><div><img src="http://localhost/capricho/app/img/'+campos.rutafinal+'"></div><a href="#cuento" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar final</a></div>');
@@ -224,7 +226,8 @@ var iniciocuento='Una pequeña mascota llamada '+ personaje_elegido +' que camin
 $('#elcuento').append('<p>'+iniciocuento);
 
 //traigo todos los txt lugares y los guardo en un array
-$.getJSON("http://localhost/capricho/app/traer_txt_lugar.php", function(txtlugar){	
+//$.getJSON("http://localhost/capricho/app/traer_txt_lugar.php", function(txtlugar){	
+$.getJSON("http://www.capricholucero.xyz/app/traer_txt_lugar.php", function(txtlugar){	
 	$.each(txtlugar, function(i, campos){
 	lugares[i]=campos.txtlugar;
 	
@@ -244,7 +247,8 @@ $('#elcuento').append('<p>'+lugar_elegido+'</p>');
 
 
 //traigo todos los txt finales y los guardo en un array
-$.getJSON("http://localhost/capricho/app/traer_txt_final.php", function(txtfinal){	
+//$.getJSON("http://localhost/capricho/app/traer_txt_final.php", function(txtfinal){	
+$.getJSON("http://www.capricholucero.xyz/app/traer_txt_final.php", function(txtlugar){	
 	$.each(txtfinal, function(i, campos){
 	finales[i]=campos.txtfinal;
 	//alert(finales);
