@@ -44,7 +44,7 @@ function mostrar_imgdibu(){
 
 		//coloco adentro dinamicamente la imagen de los personajes en la grilla con el vinculo para el popup 
 		var idpers='#'+i;
-		$(idpers).append('<div><a href="#poppersonaje'+i+'" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/'+campos.rutadibu+'"></a></div>');	
+		$(idpers).append('<div><a href="#poppersonaje'+i+'" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="http://www.capricholucero.xyz/app/img/'+campos.rutadibu+'"></a></div>');	
 
 	
 	//guardo offline cada ruta en cada vuelta del bucle	
@@ -197,7 +197,7 @@ function llenar_popup_lugar(){
 	$.getJSON("http://www.capricholucero.xyz/app/traer_img_lugar.php", function(rutalugar){			
 			$.each(rutalugar, function(i, campos){
 				var idpoplugar='#poplugar'+i;		
-			$(idpoplugar).append('<div><div><img src="http://localhost/capricho/app/img/'+campos.rutalugar+'"></div><a href="#finales" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar lugar</a></div>');
+			$(idpoplugar).append('<div><div><img src="http://www.capricholucero.xyz/app/img/'+campos.rutalugar+'"></div><a href="#finales" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar lugar</a></div>');
 
 
 
@@ -264,7 +264,7 @@ function llenar_popup_final(){
 	$.getJSON("http://www.capricholucero.xyz/app/traer_img_final.php", function(rutafinal){			
 		$.each(rutafinal, function(i, campos){
 			var idpopfinal='#popfinal'+i;		
-			$(idpopfinal).append('<div><div><img src="http://localhost/capricho/app/img/'+campos.rutafinal+'"></div><a href="#cuento" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar final</a></div>');
+			$(idpopfinal).append('<div><div><img src="http://www.capricholucero.xyz/app/img/'+campos.rutafinal+'"></div><a href="#cuento" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip">confirmar final</a></div>');
 				
 		
 			
