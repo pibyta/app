@@ -47,8 +47,8 @@ margin:0;
 padding:0;
 }
 
-#poppersonaje0, #poppersonaje1, #poppersonaje2, #poppersonaje3, #poplugar0, #poplugar1, #poplugar2,#poplugar3,#popfinal0,#popfinal1,#popfinal2,#popfinal3{
-	background-color:#869ea5;
+.ventana{
+	background-color:#869ea5!important;
 	width:80%;
 	
 }
