@@ -24,8 +24,8 @@ var cuento;
 	
 //PAGINA PERSONAJES**************************************************************************
 function mostrar_imgdibu(){
-	$.getJSON("http://localhost/capricho/app/traer_img_dibu.php", function(rutadibu, iddibu){		
-	//$.getJSON("http://www.capricholucero.xyz/app/traer_img_dibu.php", function(rutadibu){
+	//$.getJSON("http://localhost/capricho/app/traer_img_dibu.php", function(rutadibu, iddibu){		
+	$.getJSON("http://www.capricholucero.xyz/app/traer_img_dibu.php", function(rutadibu,iddibu){
 	
 		$.each(rutadibu, function(i, campos){
 
@@ -59,8 +59,8 @@ mostrar_imgdibu();
 
 function llenar_popup_pers(){
 //coloco el nombre de los personajes a los popup	
-	$.getJSON("http://localhost/capricho/app/traer_nombre_dibu.php", function(nombredibu,iddibu){	
-	//$.getJSON("http://www.capricholucero.xyz/app/traer_nombre_dibu.php", function(nombredibu,iddibu){
+	//$.getJSON("http://localhost/capricho/app/traer_nombre_dibu.php", function(nombredibu,iddibu){	
+	$.getJSON("http://www.capricholucero.xyz/app/traer_nombre_dibu.php", function(nombredibu,iddibu){
 		$.each(nombredibu, function(i, campos){
 		
 			var idpop='#poppersonaje'+i;
@@ -73,8 +73,8 @@ function llenar_popup_pers(){
 		});/*cierre $.each*/
 
 			//coloco la descripcion de los personajes a los popup	
-			$.getJSON("http://localhost/capricho/app/traer_descrip_dibu.php", function(descripdibu,iddibu){
-			//$.getJSON("http://www.capricholucero.xyz/app/traer_descrip_dibu.php", function(descripdibu,iddibu){
+			//$.getJSON("http://localhost/capricho/app/traer_descrip_dibu.php", function(descripdibu,iddibu){
+			$.getJSON("http://www.capricholucero.xyz/app/traer_descrip_dibu.php", function(descripdibu,iddibu){
 
 				//alert (descripciondibu.length);		
 				$.each(descripdibu, function(i, campos){
@@ -89,8 +89,8 @@ function llenar_popup_pers(){
 		
 
 					//coloco la imagen de los personajes y el boton de confirmar personaje a los popup			
-					$.getJSON("http://localhost/capricho/app/traer_img_dibu.php", function(rutadibu,iddibu){	
-					//$.getJSON("http://www.capricholucero.xyz/app/traer_img_dibu.php", function(rutadibu,iddibu){			
+					//$.getJSON("http://localhost/capricho/app/traer_img_dibu.php", function(rutadibu,iddibu){	
+					$.getJSON("http://www.capricholucero.xyz/app/traer_img_dibu.php", function(rutadibu,iddibu){			
 					$.each(rutadibu, function(i, campos){
 					var idpop='#poppersonaje'+i;
 					var btnpers='btnpersonaje'+i;		
@@ -128,8 +128,8 @@ llenar_popup_pers();
 
 
 function mostrar_imglugar(){
-$.getJSON("http://localhost/capricho/app/traer_img_lugar.php", function(rutalugar){		
-//$.getJSON("http://www.capricholucero.xyz/app/traer_img_lugar.php", function(rutalugar){
+//$.getJSON("http://localhost/capricho/app/traer_img_lugar.php", function(rutalugar){		
+$.getJSON("http://www.capricholucero.xyz/app/traer_img_lugar.php", function(rutalugar){
 	$.each(rutalugar, function(i, campos){
 
 //creo dinamicamente el div de la grilla a o b segun si el nro de vuelta si es par o impar
@@ -154,8 +154,8 @@ mostrar_imglugar();
 function llenarpopuplugar(){
 	
 //coloco el nombre de los LUGARES a los popup	
-	$.getJSON("http://localhost/capricho/app/traer_nombre_lugar.php", function(nombrelugar){	
-	//$.getJSON("http://www.capricholucero.xyz/app/traer_nombre_lugar.php", function(nombrelugar){
+	//$.getJSON("http://localhost/capricho/app/traer_nombre_lugar.php", function(nombrelugar){	
+	$.getJSON("http://www.capricholucero.xyz/app/traer_nombre_lugar.php", function(nombrelugar){
 			$.each(nombrelugar, function(i, campos){
 			var idpoplugar='#poplugar'+i;
 			$(idpoplugar).append('<a href="#finales" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a><h3>'+campos.nombrelugar+"</h3>");
@@ -164,8 +164,8 @@ function llenarpopuplugar(){
 
 
 	//coloco la descripcion de los lugares a los popup	
-	$.getJSON("http://localhost/capricho/app/traer_descrip_lugar.php", function(descriplugar){
-	//$.getJSON("http://www.capricholucero.xyz/app/traer_descrip_lugar.php", function(descriplugar){
+	//$.getJSON("http://localhost/capricho/app/traer_descrip_lugar.php", function(descriplugar){
+	$.getJSON("http://www.capricholucero.xyz/app/traer_descrip_lugar.php", function(descriplugar){
 		
 		$.each(descriplugar, function(i, campos){
 		var idpoplugar='#poplugar'+i;
@@ -175,8 +175,8 @@ function llenarpopuplugar(){
 	
 		
 	//coloco la imagen de los lugares y el boton de confirmar a los popup			
-	$.getJSON("http://localhost/capricho/app/traer_img_lugar.php", function(rutalugar, idlugar){	
-	//$.getJSON("http://www.capricholucero.xyz/app/traer_img_lugar.php", function(rutalugar, idlugar){
+	//$.getJSON("http://localhost/capricho/app/traer_img_lugar.php", function(rutalugar, idlugar){	
+	$.getJSON("http://www.capricholucero.xyz/app/traer_img_lugar.php", function(rutalugar, idlugar){
 					
 			$.each(rutalugar, function(i, campos){
 				var idpoplugar='#poplugar'+i;	
@@ -199,8 +199,8 @@ function llenarpopuplugar(){
 			});/*cierre $.each*/
 			
 			//traigo todos los txt lugares y los guardo en el array*******************************
-			$.getJSON("http://localhost/capricho/app/traer_txt_lugar.php", function(txtlugar,idlugar){	
-			//$.getJSON("http://www.capricholucero.xyz/app/traer_txt_lugar.php", function(txtlugar,idlugar){	
+			//$.getJSON("http://localhost/capricho/app/traer_txt_lugar.php", function(txtlugar,idlugar){	
+			$.getJSON("http://www.capricholucero.xyz/app/traer_txt_lugar.php", function(txtlugar,idlugar){	
 			$.each(txtlugar, function(i, campos){
 	
 			//guardo en un array todos los lugares de los cuentos, cada posicion tiene el nombre del id de la base de datos
@@ -220,8 +220,8 @@ llenarpopuplugar();
 
 
 function mostrar_imgfinal(){
-$.getJSON("http://localhost/capricho/app/traer_img_final.php", function(rutafinal){	
-//$.getJSON("http://www.capricholucero.xyz/app/traer_img_final.php", function(rutalfinal){
+//$.getJSON("http://localhost/capricho/app/traer_img_final.php", function(rutafinal){	
+$.getJSON("http://www.capricholucero.xyz/app/traer_img_final.php", function(rutalfinal){
 	$.each(rutafinal, function(i, campos){
 //creo dinamicamente el div de la grilla a o b segun si el nro de vuelta si es par o impar
 
@@ -246,8 +246,8 @@ $.getJSON("http://localhost/capricho/app/traer_img_final.php", function(rutafina
 mostrar_imgfinal();
 function llenar_popup_final(){
 	//coloco el nombre de los finales a los popup	
-	$.getJSON("http://localhost/capricho/app/traer_nombre_final.php", function(nombrefinal){	
-	//$.getJSON("http://www.capricholucero.xyz/app/traer_nombre_final.php", function(nombrefinal){
+	//$.getJSON("http://localhost/capricho/app/traer_nombre_final.php", function(nombrefinal){	
+	$.getJSON("http://www.capricholucero.xyz/app/traer_nombre_final.php", function(nombrefinal){
 		
 		$.each(nombrefinal, function(i, campos){
 			var idpopfinal='#popfinal'+i;
@@ -255,8 +255,8 @@ function llenar_popup_final(){
 		});/*cierre $.each*/
 		
 			//coloco la imagen de los finales a los popup			
-				$.getJSON("http://localhost/capricho/app/traer_img_final.php", function(rutafinal, idfinal){	
-				//$.getJSON("http://www.capricholucero.xyz/app/traer_img_final.php", function(rutafinal){			
+				//$.getJSON("http://localhost/capricho/app/traer_img_final.php", function(rutafinal, idfinal){	
+				$.getJSON("http://www.capricholucero.xyz/app/traer_img_final.php", function(rutafinal){			
 					$.each(rutafinal, function(i, campos){
 						
 		var idpopfinal='#popfinal'+i;	
@@ -278,8 +278,8 @@ function llenar_popup_final(){
 			
 		});/*cierre $.each*/
 		
-		$.getJSON("http://localhost/capricho/app/traer_txt_final.php", function(txtfinal,idfinal){	
-	//$.getJSON("http://www.capricholucero.xyz/app/traer_txt_final.php", function(txtfinal,idfinal){
+		//$.getJSON("http://localhost/capricho/app/traer_txt_final.php", function(txtfinal,idfinal){	
+	$.getJSON("http://www.capricholucero.xyz/app/traer_txt_final.php", function(txtfinal,idfinal){
 		$.each(txtfinal, function(i, campos){
 		//guardo en un array todos los finales de los cuentos, cada posicion tiene el nombre del id de la base de datos
 			var posfinal=campos.idfinal;
