@@ -143,7 +143,7 @@ $.getJSON("http://www.capricholucero.xyz/app/traer_img_lugar.php", function(ruta
 //coloco adentro dinamicamente la imagen de los lugares en la grilla con el vinculo para el popup 
 		var lugar='#lugar'+i;
 		
-		$(lugar).append('<div><a href="#poplugar'+i+'" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="img/'+campos.rutalugar+'"></a></div>');
+		$(lugar).append('<div><a href="#poplugar'+i+'" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="http://www.capricholucero.xyz/app/img/'+campos.rutalugar+'"></a></div>');
 			
 	});/*cierre $.each*/
 });	/*cierre $.getJSON*/
