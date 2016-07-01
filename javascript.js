@@ -264,7 +264,8 @@ function llenar_popup_final(){
 							$(idbtnfinal).click(function(){							
 							posfinal=campos.idfinal;
 							finalelegido=arraytxtfinal[posfinal];
-							localStorage.setItem('finalseleccionado',finalelegido);		
+							localStorage.setItem('finalseleccionado',finalelegido);	
+							$('#elcuento').empty();		
 							mostrar_cuento();					
 							});
 
