@@ -94,7 +94,7 @@ function llenar_popup_pers(){
 					$.each(rutadibu, function(i, campos){
 					var idpop='#poppersonaje'+i;
 					var btnpers='btnpersonaje'+i;		
-					$(idpop).append('<div><div><img src="http://www.capricholucero.xyz/app/img/'+campos.rutadibu+'"></div><a href="#lugares"  class="ui-btn ui-btn-corner-all confirmar" data-transition="flip" id='+btnpers+' >confirmar personaje</a></div>');
+					$(idpop).append('<div><div><img src="http://www.capricholucero.xyz/app/img/'+campos.rutadibu+'"></div><a href="#lugares"  class="ui-btn ui-btn-corner-all confirmar" data-transition="flip" id='+btnpers+'>confirmar personaje</a></div>');
 
  					var idbtnpers='#'+btnpers;
 					
@@ -181,7 +181,7 @@ function llenarpopuplugar(){
 			$.each(rutalugar, function(i, campos){
 				var idpoplugar='#poplugar'+i;	
 				var btnlugar='btnlugar'+i;	
-					
+				
 			$(idpoplugar).append('<div><img src="http://www.capricholucero.xyz/app/img/'+campos.rutalugar+'"></div><a href="#finales" class="ui-btn ui-btn-corner-all confirmar" data-transition="flip" id='+btnlugar+'>confirmar lugar</a>');
 
 
