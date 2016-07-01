@@ -2,7 +2,7 @@
 <!-- el id es el dominio pero invertido con el nombre al final
      la version es de la app -->
 <widget id="xyz.capricholucero" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>mirame vidrieras</name> <!-- Nombre de la APP -->
+    <name>Arma cuentos</name> <!-- Nombre de la APP -->
     <description>
         Cuentos para armar y leer antes de apagar la luz <!-- Descripcion en phonegap, si no se especifica otra en el appleStore o googleStore, va a aparecer esta descripcion -->
     </description>
