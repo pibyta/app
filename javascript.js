@@ -158,7 +158,7 @@ function llenarpopuplugar(){
 	$.getJSON("http://www.capricholucero.xyz/app/traer_nombre_lugar.php", function(nombrelugar){
 			$.each(nombrelugar, function(i, campos){
 			var idpoplugar='#poplugar'+i;
-			$(idpoplugar).append('<a href="#finales" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a><h3>'+campos.nombrelugar+"</h3>");
+			$(idpoplugar).append('<a href="#finales" data-rel="back" class="ui-btn-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a><h3>'+campos.nombrelugar+'</h3>');
 			});/*cierre $.each*/
 
 
@@ -169,7 +169,7 @@ function llenarpopuplugar(){
 		
 		$.each(descriplugar, function(i, campos){
 		var idpoplugar='#poplugar'+i;
-		$(idpoplugar).append("'<h4>"+ campos.descriplugar +"</h4>'");
+		$(idpoplugar).append('<h4>'+ campos.descriplugar +'</h4>');
 		});/*cierre $.each*/
 		
 	
