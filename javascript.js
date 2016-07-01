@@ -208,20 +208,17 @@ function llenarpopuplugar(){
 				arraytxtlugar[poslugar]=campos.txtlugar;								
 			})/*cierre $.each*/
 
-			});/*cierre $.getJSON*/
+});/*cierre $.getJSON*/
 });/*cierre $.getJSON*/	
 });/*cierre $.getJSON*/
 });/*cierre $.getJSON*/		
 };/*cierre funcion*/
-	
 llenarpopuplugar();
 
 //PAGINA FINALES************************************************
-
-
 function mostrar_imgfinal(){
 //$.getJSON("http://localhost/capricho/app/traer_img_final.php", function(rutafinal){	
-$.getJSON("http://www.capricholucero.xyz/app/traer_img_final.php", function(rutalfinal){
+$.getJSON("http://www.capricholucero.xyz/app/traer_img_final.php", function(rutafinal){
 	$.each(rutafinal, function(i, campos){
 //creo dinamicamente el div de la grilla a o b segun si el nro de vuelta si es par o impar
 
@@ -237,13 +234,10 @@ $.getJSON("http://www.capricholucero.xyz/app/traer_img_final.php", function(ruta
 		
 		$(idfinal).append('<div><a href="#popfinal'+i+'" data-rel="popup" data-position-to="window" data-transition="fade" data-inline="true"><img class="popphoto" src="http://www.capricholucero.xyz/app/img/'+campos.rutafinal+'"></a></div>');
 	});/*cierre each*/	
-	
 	});	/*cierre $.getJSON*/
 };/*cierre funcion*/
-
-
-
 mostrar_imgfinal();
+
 function llenar_popup_final(){
 	//coloco el nombre de los finales a los popup	
 	//$.getJSON("http://localhost/capricho/app/traer_nombre_final.php", function(nombrefinal){	
